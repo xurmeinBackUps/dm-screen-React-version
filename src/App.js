@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-// import { Home } from './site/home/Home';
-// import { Header } from './site/home/Header';
-// import { Footer } from './site/home/Footer';
-// import { Splash } from './app/site/Splash';
-// import { SiteNav } from './app/site/SiteNav'
+import { Home } from './Home';
+import { Header } from './Header';
+import { Footer } from './Footer';
+import { Splash } from './site/splash/Splash';
+import { SiteNav } from './site/splash/SiteNav';
 
 
 import './App.scss';
@@ -82,14 +82,14 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          {/* <Header />
+          <Header />
           <Home />
           <Footer />
 
           <hr />
 
           <Splash />
-          <SiteNav /> */}
+          <SiteNav />
 
         </Router>
       </div>
