@@ -1,25 +1,99 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+
+
+import {
+  BrowserRouter as Router,
+  // Switch,
+  // Route
+} from 'react-router-dom';
+// import { Button } from 'reactstrap';
+
+
+
 import './App.scss';
 
 class App extends Component {
+  // constructor(props){
+  //   super(props);
+  //   this.state={
+  //     activate: false
+  //   }
+  // }
+
+  // componentWillMount(){
+    // const token = localStorage.getItem('token');
+    // if(token && !this.state.sessionToken){
+    //   this.setState({ sessionToken: token });
+    // }
+  // }
+  // componentDidMount(){
+    
+   
+  // }
+
+  // toggleView = (e) => {
+  //   if(e && this.state.activate){
+  //     this.setState({ activate: true });
+  //   }
+  //   console.log(this.state._view);
+  //   return this.state._view;
+  // }
+
+  // endSession = (_e) => {
+  //   if(_e && !this.state._view[1]){
+  //     this.setState({ activate: false });
+  //   }
+  //   console.log(this.state._view);
+
+  //   return this.state._view;
+  //   // localStorage.clear();
+  // }
+
+  // views = (event) => {
+  //   if(event && this.state.noSession){
+  //     this.setState({ activate: true});
+  //     return (
+  //       <div className="App">
+  //         <Switch>
+  //           <Route path="/interface">
+
+
+
+  //             <div className="view-btn-container">
+  //               <button className="view-btn" onClick={this.endSession}>
+                  
+  //               </button>
+  //             </div>
+
+  //           </Route>
+  //         </Switch>
+  //       </div>
+  //     )
+  //   } else {
+  //     return (
+  //       <div className="App">
+  //         <Route path="/" exact>
+          
+  //           <div className="view-btn-container">
+  //             <button className="view-btn" onClick={this.activateSession}>
+  //               ENTER
+  //             </button>
+  //           </div>
+
+  //         </Route>
+  //       </div>
+  //     )
+  //   }
+  // }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Router>
+          {/* {this.views()} */}
+
+        </Router>
       </div>
     );
   }
