@@ -1,11 +1,11 @@
 import React from  'react';
 
-const AuthForm = () => {
+const SiteNav = () => {
     return(
         <div className="App">
-            
+          
         </div>  
     )
 }
 
-export default AuthForm;
+export default SiteNav;
