@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 
+// import { Home } from './site/home/Home';
+// import { Header } from './site/home/Header';
+// import { Footer } from './site/home/Footer';
+// import { Splash } from './app/site/Splash';
+// import { SiteNav } from './app/site/SiteNav'
 
+
+import './App.scss';
 
 import {
   BrowserRouter as Router,
@@ -9,9 +16,6 @@ import {
 } from 'react-router-dom';
 // import { Button } from 'reactstrap';
 
-
-
-import './App.scss';
 
 class App extends Component {
   // constructor(props){
@@ -50,48 +54,42 @@ class App extends Component {
   //   // localStorage.clear();
   // }
 
-  // views = (event) => {
-  //   if(event && this.state.noSession){
-  //     this.setState({ activate: true});
-  //     return (
-  //       <div className="App">
-  //         <Switch>
-  //           <Route path="/interface">
-
-
-
-  //             <div className="view-btn-container">
-  //               <button className="view-btn" onClick={this.endSession}>
-                  
-  //               </button>
-  //             </div>
-
-  //           </Route>
-  //         </Switch>
-  //       </div>
+  // views = () => {
+  //   if(this.state.sessionToken === localStorage.getItem('token')){
+  //     return(
+  //       <Switch>
+  //         <Route path='/' exact>
+  //           <Splash sessionToken={this.state.sessionToken} />
+  //           <div className="logout" onClick={this.logout}>
+  //             <p>logout.</p>
+  //           </div>
+  //           <DocitNav />
+  //         </Route>
+  //       </Switch>
   //     )
   //   } else {
-  //     return (
-  //       <div className="App">
-  //         <Route path="/" exact>
-          
-  //           <div className="view-btn-container">
-  //             <button className="view-btn" onClick={this.activateSession}>
-  //               ENTER
-  //             </button>
-  //           </div>
-
-  //         </Route>
-  //       </div>
+  //     return(
+  //       <Route path="/">
+  //         <Jumbo />
+  //         <Home setToken={this.setSessionToken} />
+  //       </Route>
   //     )
   //   }
   // }
+
 
   render() {
     return (
       <div className="App">
         <Router>
-          {/* {this.views()} */}
+          {/* <Header />
+          <Home />
+          <Footer />
+
+          <hr />
+
+          <Splash />
+          <SiteNav /> */}
 
         </Router>
       </div>
